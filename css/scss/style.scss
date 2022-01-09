@@ -1,0 +1,82 @@
+@import "./variables";
+@import "./header";
+
+// Jules
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import "./index";
+@import "./singleshop";
+@import "./contact";
+@import "./panier";
+@import "./informationsperso";
+
+// Pierre
+@import "./shop";
+@import './about';
+@import './inscription';
+@import './connexion';
+@import './mdp';
+@import './paiement';
+
+@import "./footer";
+
+// Nico
+@import "./adminIndex";
+
+
+.fa-star {
+    color: gray;
+    cursor: pointer;
+    padding: 0.0625rem;
+}
+/* Si elle porte en plus la classe '.gold', elle sera en jaune. */
+.fa-star.gold {
+    color: #FFDC0F;
+}
+
+a, a:hover{
+    text-decoration: none!important;
+}
+
+.not_found {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left{
+        width: 45%;
+
+        h2{
+            font-weight: 600;
+            color: $vert
+        }
+
+        p{
+            font-style: italic;
+            color: $textecolor
+        }
+
+        a{
+            padding: .375rem .75rem; 
+            margin: .75rem 0;
+            background-color: $vert;
+            border-color: $vert;
+            border-radius: .25rem;
+            cursor: pointer;
+
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+
+            transition: color .15s;
+
+            &:focus {
+                box-shadow: 0 0 0 0.25rem rgba(90, 172, 110, 0.5);
+            }
+        }
+    }
+
+    img{
+        width: 50%;
+    }
+}
